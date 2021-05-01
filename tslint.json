@@ -1,0 +1,22 @@
+{
+  "defaultSeverity": "error",
+  "extends": [ "tslint:latest" ],
+
+  "rules": {
+    "curly": true,
+    "eofline": true,
+    "no-empty": false,
+    "semicolon": true,
+    "whitespace": false,
+    "no-console": false,
+    "arrow-parens": true,
+    "import-spacing": true,
+    "no-var-requires": false,
+    "no-duplicate-imports": true,
+    "quotemark": [true, "single"],
+    "no-submodule-imports": false,
+    "arrow-return-shorthand": true,
+    "no-implicit-dependencies": false,
+    "binary-expression-operand-order": true
+  }
+}
