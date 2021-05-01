@@ -1,0 +1,9 @@
+# Folders
+node_modules/
+build/
+coverage/
+.vscode/
+
+# Files
+yarn-error.log
+.env
