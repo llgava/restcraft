@@ -15,7 +15,7 @@ class TexturePacksController {
   public async update(req: Request, res: Response) {
     const document = await TexturePack.findOneAndUpdate({ uuid: req.params.uuid }, req.body, { new: true });
 
-    return res.status(201).json(document);
+    return res.status(200).json(document);
   }
 
   /** List all texture packs. */
