@@ -3,6 +3,7 @@ node_modules/
 build/
 coverage/
 .vscode/
+web_scraping/
 
 # Files
 yarn-error.log

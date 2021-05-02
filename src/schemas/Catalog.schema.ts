@@ -5,15 +5,17 @@ import { CatalogType } from '@models/Catalog.model';
 const schema = new Schema({
   uuid: { type: String, required: true, unique: true },
   title: { type: String, required: true, unique: true },
+  description: { type: String, required: true, unique: true },
   creator: { type: String, required: true },
-  price: { type: Number, required: true },
+  price: { type: String, required: true },
+  trailer: { type: String, required: true },
+  keyart: { type: String, required: true },
+  rating: {
+    average: { type: Number, required: true },
+    total: { type: Number, require: true }
+  },
   url: { type: String, required: true, unique: true },
-  thumbnail: { type: String, required: true, unique: true },
 
-  // Not colleted by Web Scraping yet!
-  description: { type: String, required: false },
-  averageRating: { type: Number, required: false },
-  totalRatingCount: { type: Number, required: false }
 }, { versionKey: false });
 
 export const Catalog = model<CatalogType>('catalog', schema);

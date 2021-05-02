@@ -1,12 +1,13 @@
 import { Request, Response } from 'express';
+import { TexturePack } from '../schemas/TexturePack.schema';
 
-import { Catalog } from '@schemas/Catalog.schema';
-
-class CatalogController {
+class TexturePacksController {
   public async test(req: Request, res: Response) {
-    return res.status(200).json({ message: 'Worked!' });
+    const document = TexturePack.create(req.body);
+
+    return res.status(201).json(document);
   }
 }
 
 
-export default new CatalogController();
+export default new TexturePacksController();

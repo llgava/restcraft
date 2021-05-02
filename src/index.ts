@@ -1,12 +1,13 @@
 import Server from './server';
+import Chalk from 'chalk';
 import { Express } from 'express';
 
 class MinecraftMarketplaceAPI {
   private app: Express = Server.app;
 
   constructor() {
-    this.app.listen(3000, () => {
-      console.log('Rodando na por 3000');
+    this.app.listen(process.env.PORT, () => {
+      console.log(`${Chalk.bold.green('✔')} The application has started.`);
     });
   }
 }

@@ -5,6 +5,7 @@
   "repository": "https://github.com/llgava/minecraft-marketplace-api.git",
   "author": "llgava <llgavamt@gmail.com>",
   "license": "MIT",
+  
   "scripts": {
     "start": "node ./build/src/index.js",
     "build": "babel ./src  --extensions \".js,.ts\" --out-dir ./build/src --copy-files --no-copy-ignored && clear && echo \"🏗️  Compiling...\"",
@@ -12,11 +13,14 @@
     "test": "clear && echo \"🃏  Running Jest...\n \" && jest",
     "test:coverage": "clear && echo \"🃏  Running Jest with Coverage...\n \" && jest --coverage"
   },
+
   "dependencies": {
     "chalk": "^4.1.1",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.7"
   },
+
   "devDependencies": {
     "@babel/cli": "^7.13.16",
     "@babel/core": "^7.14.0",
