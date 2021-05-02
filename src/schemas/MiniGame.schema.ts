@@ -8,4 +8,4 @@ const schema = new Schema({
 
 }, { versionKey: false });
 
-export const SkinPack = model<CatalogType>('skin-pack', schema);
+export const MiniGames = model<CatalogType>('mini-game', schema);
