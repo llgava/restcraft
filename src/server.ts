@@ -1,7 +1,7 @@
 require('dotenv').config();
 import express from 'express';
 
-import CatalogRoutes from '@routes/Catalog.routes';
+import TexturePacksRoutes from '@routes/TexturePacks.routes';
 import { MongoManager } from '@utils/MongoManager';
 
 class Server {
@@ -18,7 +18,7 @@ class Server {
     this.app.use(express.urlencoded({ extended: true }));
 
     // Routes
-    this.app.use(this.url, CatalogRoutes.router);
+    this.app.use(this.url, TexturePacksRoutes.router);
   }
 }
 
