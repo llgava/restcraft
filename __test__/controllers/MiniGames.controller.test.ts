@@ -4,7 +4,7 @@ import Server from '../../src/server';
 import { CatalogRating, CatalogModel } from '../../src/models/Catalog.model';
 import { v4 } from 'uuid';
 
-const api = `${Server.url}/adventure-maps`;
+const api = `${Server.url}/mini-games`;
 
 afterAll(async () => { await Server.mongoDB.close(true); });
 
