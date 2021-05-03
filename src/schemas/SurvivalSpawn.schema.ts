@@ -8,4 +8,4 @@ const schema = new Schema({
 
 }, { versionKey: false });
 
-export const SurvivalPack = model<CatalogType>('survival-pack', schema);
+export const SurvivalSpawn = model<CatalogType>('survival-spawn', schema);
