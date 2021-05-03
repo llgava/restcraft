@@ -5,7 +5,7 @@ import TexturePacksRoutes from '@routes/TexturePacks.routes';
 import { MongoManager } from '@utils/MongoManager';
 
 class Server {
-  public url: any = '/api/v1';
+  public url: string = '/api/v1';
   public app: express.Express;
   public mongoDB: MongoManager;
 

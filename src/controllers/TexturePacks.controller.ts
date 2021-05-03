@@ -57,7 +57,7 @@ class TexturePacksController {
     return res.status(200).json(document);
   }
 
-  /** List a texture pack by Title. */
+  /** List a texture pack by title. */
   public async listByTitle(req: Request, res: Response) {
     const document = await TexturePack.findOne({ title: req.params.title });
 

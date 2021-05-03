@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'Seface Blocks API',
+  displayName: 'Minecraft Marketplace API',
   clearMocks: true,
   rootDir: '.',
   coverageProvider: 'v8',

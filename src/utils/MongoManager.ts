@@ -25,4 +25,9 @@ export class MongoManager {
 
     mongoose.Promise = global.Promise;
   }
+
+  /** Closes the connection to the MongoDB database. */
+  public close(force?: boolean) {
+    return mongoose.connection.close(force);
+  }
 }

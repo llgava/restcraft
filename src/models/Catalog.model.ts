@@ -1,6 +1,6 @@
 import { ObjectId, Document } from 'mongoose';
 
-interface Rating {
+interface CatalogRating {
   average?: number;
   total?: number;
 }
@@ -14,10 +14,10 @@ interface CatalogModel {
   price?: string;
   trailer?: string;
   keyart?: string;
-  rating?: Rating;
+  rating?: CatalogRating;
   url?: string;
 }
 
 type CatalogType = CatalogModel & Document;
 
-export { CatalogModel, CatalogType };
+export { CatalogRating, CatalogModel, CatalogType };

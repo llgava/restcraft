@@ -9,8 +9,8 @@
     "start": "node ./build/src/index.js",
     "build": "babel ./src  --extensions \".js,.ts\" --out-dir ./build/src --copy-files --no-copy-ignored && clear && echo \"🏗️  Compiling...\"",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
-    "test": "clear && echo \"🃏  Running Jest...\n \" && jest",
-    "test:coverage": "clear && echo \"🃏  Running Jest with Coverage...\n \" && jest --coverage"
+    "test": "clear && echo \"🃏  Running Jest...\n \" && jest --passWithNoTests",
+    "test:coverage": "clear && echo \"🃏  Running Jest with Coverage...\n \" && jest --coverage --passWithNoTests"
   },
   "dependencies": {
     "chalk": "^4.1.1",
@@ -28,6 +28,7 @@
     "@types/jest": "^26.0.23",
     "@types/node": "^15.0.1",
     "@types/supertest": "^2.0.11",
+    "@types/uuid": "^8.3.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "jest": "^26.6.3",
     "supertest": "^6.1.3",
