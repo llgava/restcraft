@@ -10,6 +10,7 @@ class TexturePacksRoutes {
 
     this.router.post('/texture-packs', TexturePacksController.register);
     this.router.put('/texture-packs/update/:uuid', TexturePacksController.update);
+    this.router.delete('/texture-packs/delete/:uuid', TexturePacksController.delete);
     this.router.get('/texture-packs', TexturePacksController.listAll);
     this.router.get('/texture-packs/uuid/:uuid', TexturePacksController.listByUUID);
     this.router.get('/texture-packs/title/:title', TexturePacksController.listByTitle);
