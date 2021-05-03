@@ -9,9 +9,9 @@ class MiniGamesController {
   public async register(req: Request, res: Response) {
     if (!API.checkBearerToken(req, res)) { return; }
 
-    await MiniGame.create(req.body).then((mashUpPack) => {
-      mashUpPack.save();
-      return res.status(201).json(mashUpPack);
+    await MiniGame.create(req.body).then((miniGame) => {
+      miniGame.save();
+      return res.status(201).json(miniGame);
     }).catch(() => {
       return res.status(400).json({ message: 'An error occurred when trying to register a new mini game.' });
     });

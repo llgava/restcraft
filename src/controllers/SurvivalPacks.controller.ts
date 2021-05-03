@@ -9,9 +9,9 @@ class SurvivalPacksController {
   public async register(req: Request, res: Response) {
     if (!API.checkBearerToken(req, res)) { return; }
 
-    await SurvivalPack.create(req.body).then((mashUpPack) => {
-      mashUpPack.save();
-      return res.status(201).json(mashUpPack);
+    await SurvivalPack.create(req.body).then((survivalPack) => {
+      survivalPack.save();
+      return res.status(201).json(survivalPack);
     }).catch(() => {
       return res.status(400).json({ message: 'An error occurred when trying to register a new survival pack.' });
     });
