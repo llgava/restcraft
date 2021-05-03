@@ -24,7 +24,7 @@ describe('MashUpPacks.controller', () => {
     url: 'https://www.minecraft.net/en-us/pdp.html?id=5a56435d-689c-46aa-a685-073750bff4d4'
   };
 
-  test('should create a new skin pack', async (done) => {
+  test('should create a new mash-up pack', async (done) => {
     const response = await request(Server.app)
       .post(api).set({ Authorization: `Bearer ${process.env.BEARER_TOKEN}` }).send(mashUpPack);
 
@@ -32,7 +32,7 @@ describe('MashUpPacks.controller', () => {
     done();
   });
 
-  test('should update a skin pack by UUID', async (done) => {
+  test('should update a mash-up pack by UUID', async (done) => {
     const updatedData: CatalogRating = { average: 5, total: 50000 };
     const response = await request(Server.app)
       .put(`${api}/update/${mashUpPack.uuid}`).set({ Authorization: `Bearer ${process.env.BEARER_TOKEN}` }).send({ rating: updatedData });
@@ -42,35 +42,35 @@ describe('MashUpPacks.controller', () => {
     done();
   });
 
-  test('should list all skin packs', async (done) => {
+  test('should list all mash-up packs', async (done) => {
     const response = await request(Server.app).get(api);
 
     expect([200, 400]).toContain(response.status);
     done();
   });
 
-  test('should list a skin pack by UUID', async (done) => {
+  test('should list a mash-up pack by UUID', async (done) => {
     const response = await request(Server.app).get(`${api}/uuid/${mashUpPack.uuid}`);
 
     expect([200, 400]).toContain(response.status);
     done();
   });
 
-  test('should list a skin pack by title', async (done) => {
+  test('should list a mash-up pack by title', async (done) => {
     const response = await request(Server.app).get(`${api}/title/${mashUpPack.title}`);
 
     expect([200, 400]).toContain(response.status);
     done();
   });
 
-  test('should list all skin packs by a creator', async (done) => {
+  test('should list all mash-up packs by a creator', async (done) => {
     const response = await request(Server.app).get(`${api}/creator/${mashUpPack.creator}`);
 
     expect([200, 400]).toContain(response.status);
     done();
   });
 
-  test('should delete a skin pack by UUID', async (done) => {
+  test('should delete a mash-up pack by UUID', async (done) => {
     const response = await request(Server.app)
       .delete(`${api}/delete/${mashUpPack.uuid}`).set({ Authorization: `Bearer ${process.env.BEARER_TOKEN}` });
 
