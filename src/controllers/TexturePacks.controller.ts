@@ -13,7 +13,7 @@ class TexturePacksController {
       texturePack.save();
       return res.status(201).json(texturePack);
     }).catch(() => {
-      return res.status(400).json({ message: 'An error occurred when trying to register a new texture packs.' });
+      return res.status(400).json({ message: 'An error occurred when trying to register a new texture pack.' });
     });
   }
 

@@ -8,4 +8,4 @@ const schema = new Schema({
 
 }, { versionKey: false });
 
-export const MiniGames = model<CatalogType>('mini-game', schema);
+export const MiniGame = model<CatalogType>('mini-game', schema);

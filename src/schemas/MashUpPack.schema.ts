@@ -8,4 +8,4 @@ const schema = new Schema({
 
 }, { versionKey: false });
 
-export const MashUpPacks = model<CatalogType>('mash-up-pack', schema);
+export const MashUpPack = model<CatalogType>('mash-up-pack', schema);

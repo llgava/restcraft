@@ -8,4 +8,4 @@ const schema = new Schema({
 
 }, { versionKey: false });
 
-export const AdventureMaps = model<CatalogType>('adventure-map', schema);
+export const AdventureMap = model<CatalogType>('adventure-map', schema);
