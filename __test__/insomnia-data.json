@@ -1,0 +1,1618 @@
+{
+  "_type":"export",
+  "__export_format":4,
+  "__export_date":"2021-05-03T12:30:27.055Z",
+  "__export_source":"insomnia.desktop.app:v2021.3.0",
+  "resources":[
+    {
+      "_id":"req_64b0aa1f06d443b8af100970df023b7e",
+      "parentId":"fld_9dee4b8a8e854734a411c6dbc190341a",
+      "modified":1620043769458,
+      "created":1620043673524,
+      "url":"{{ _.url }}",
+      "name":"Register a new skin pack",
+      "description":"",
+      "method":"POST",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"uuid\": \"d8d8c1ea-ecd8-4b9b-bd7b-91943a63bb3f\",\n\t\"title\": \"Builders & Biomes\",\n\t\"description\": \"Live off the land and enjoy the simple life with these farm-tastic skins! To celebrate the release of the new Minecraft Builders & Biomes: Farmer’s Market board game expansion, we're bringing you this fun skin pack to add some style to your homestead! Whether you aspire to be a skilled gardener or a busy builder, now you can look the part!\",\n\t\"creator\": \"Minecraft\",\n\t\"price\": \"0\",\n\t\"trailer\": null,\n\t\"keyart\": \"https://xforgeassets001.xboxlive.com/pf-title-b63a0803d3653643-20ca2/1134a79a-7c38-4083-94c8-ca1fdf7452f3/thumbnail_0.jpg\",\n\t\"rating\": {\n\t\t\"average\": 4.3,\n\t\t\"total\": 66862\n\t},\n\t\"url\": \"https://www.minecraft.net/en-us/pdp.html?id=d8d8c1ea-ecd8-4b9b-bd7b-91943a63bb3f\"\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_96bc992092ef44d5b17dc1375b634b8c"
+        },
+        {
+          "name":"",
+          "value":"",
+          "description":"",
+          "id":"pair_f787d3d468604fca9a5cc5f0f76a04d2"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "token":"MY_BEARER_TOKEN",
+        "prefix":"Bearer",
+        "disabled":false
+      },
+      "metaSortKey":-1619961498930,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"fld_9dee4b8a8e854734a411c6dbc190341a",
+      "parentId":"fld_3101cfdff61a4da38dbe550077d46dad",
+      "modified":1620043883837,
+      "created":1620043673523,
+      "name":"Skin Packs",
+      "description":"",
+      "environment":{
+        "url":"http://localhost:3000/api/v1/skin-packs"
+      },
+      "environmentPropertyOrder":{
+        "&":[
+          "url"
+        ]
+      },
+      "metaSortKey":-1619982875698,
+      "_type":"request_group"
+    },
+    {
+      "_id":"fld_3101cfdff61a4da38dbe550077d46dad",
+      "parentId":"wrk_2862b0fdb2b244d9b4ceb4005b809329",
+      "modified":1619982883773,
+      "created":1619892948994,
+      "name":"Minecraft Marketplace API",
+      "description":"",
+      "environment":{
+        
+      },
+      "environmentPropertyOrder":{
+        
+      },
+      "metaSortKey":-1619892948994,
+      "_type":"request_group"
+    },
+    {
+      "_id":"wrk_2862b0fdb2b244d9b4ceb4005b809329",
+      "parentId":null,
+      "modified":1619892926723,
+      "created":1619892926723,
+      "name":"Minecraft Markeplace API",
+      "description":"",
+      "scope":"collection",
+      "_type":"workspace"
+    },
+    {
+      "_id":"req_54bee8ca979c471a90a4106cc25e6a4b",
+      "parentId":"fld_9dee4b8a8e854734a411c6dbc190341a",
+      "modified":1620043818801,
+      "created":1620043673529,
+      "url":"{{ _.url }}/update/d8d8c1ea-ecd8-4b9b-bd7b-91943a63bb3f",
+      "name":"Update a skin pack by UUID",
+      "description":"",
+      "method":"PUT",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"rating\": {\n\t\t\"average\": 4.8,\n\t\t\"total\": 10000\n\t}\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_7ae67cb7038b4eb2941614b2cabf7ed6"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498905,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_3b12cb20f0f641dc949b2a70e7cf2fc1",
+      "parentId":"fld_9dee4b8a8e854734a411c6dbc190341a",
+      "modified":1620043822925,
+      "created":1620043673530,
+      "url":"{{ _.url }}/delete/d8d8c1ea-ecd8-4b9b-bd7b-91943a63bb3f",
+      "name":"Delete a skin pack by UUID",
+      "description":"",
+      "method":"DELETE",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498892.5,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_000709e435aa40268e71c1e103b6cad7",
+      "parentId":"fld_9dee4b8a8e854734a411c6dbc190341a",
+      "modified":1620044448960,
+      "created":1620043673525,
+      "url":"{{ _.url }}",
+      "name":"List all skin packs",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498880,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_dc95a5e8979e48ddba8ab9e7d8598fbf",
+      "parentId":"fld_9dee4b8a8e854734a411c6dbc190341a",
+      "modified":1620043827047,
+      "created":1620043673526,
+      "url":"{{ _.url }}/uuid/d8d8c1ea-ecd8-4b9b-bd7b-91943a63bb3f",
+      "name":"List a skin pack by UUID",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498830,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_ee32da3751e642beb27380447e2ee5cb",
+      "parentId":"fld_9dee4b8a8e854734a411c6dbc190341a",
+      "modified":1620043839783,
+      "created":1620043673527,
+      "url":"{{ _.url }}/title/Builders & Biomes",
+      "name":"List a skin pack by Title",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498780,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_0b209fb8eeed4c98afa3a9e80d1de87c",
+      "parentId":"fld_9dee4b8a8e854734a411c6dbc190341a",
+      "modified":1620044683552,
+      "created":1620043673528,
+      "url":"{{ _.url }}/creator/Minecraft",
+      "name":"List skin packs by Creator",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498730,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_0effb47697814150b8243f142474ffb6",
+      "parentId":"fld_a1d011fafab44d5d96f3cfdc89b2d16a",
+      "modified":1620043666047,
+      "created":1619961498930,
+      "url":"{{ _.url }}",
+      "name":"Register a new texture pack",
+      "description":"",
+      "method":"POST",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"uuid\": \"58d525a7-f93d-41a6-b1f3-c7887e2dad3d\",\n\t\"title\": \"Minecraft Classic Texture Pack\",\n\t\"description\": \"The classic Minecraft look you know and love! We recently updated the game with new and stylish textures, but if you prefer more of a retro flavor to your Minecraft, this is the pack for you! Why not try both packs and compare them yourself?\",\n\t\"creator\": \"Minecraft\",\n\t\"price\": \"0\",\n\t\"trailer\": null,\n\t\"keyart\": \"https://xforgeassets002.xboxlive.com/serviceid-18231953-4b1d-472c-a39e-48b10105b7b7-public/eed0caf1-ee40-4afd-b07d-7b88ef44cfbc/ClassicTextures_thumbnail_0.jpg\",\n\t\"rating\": {\n\t\t\"average\": 4.5,\n\t\t\"total\": 426022\n\t},\n\t\"url\": \"https://www.minecraft.net/en-us/pdp.html?id=58d525a7-f93d-41a6-b1f3-c7887e2dad3d\"\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_96bc992092ef44d5b17dc1375b634b8c"
+        },
+        {
+          "name":"",
+          "value":"",
+          "description":"",
+          "id":"pair_f787d3d468604fca9a5cc5f0f76a04d2"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "token":"MY_BEARER_TOKEN",
+        "prefix":"Bearer",
+        "disabled":false
+      },
+      "metaSortKey":-1619961498930,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"fld_a1d011fafab44d5d96f3cfdc89b2d16a",
+      "parentId":"fld_3101cfdff61a4da38dbe550077d46dad",
+      "modified":1619982895914,
+      "created":1619982875648,
+      "name":"Texture Packs",
+      "description":"",
+      "environment":{
+        "url":"http://localhost:3000/api/v1/texture-packs"
+      },
+      "environmentPropertyOrder":{
+        "&":[
+          "url"
+        ]
+      },
+      "metaSortKey":-1619982875648,
+      "_type":"request_group"
+    },
+    {
+      "_id":"req_c95c0fdeeec943418d3642b2cbfee72f",
+      "parentId":"fld_a1d011fafab44d5d96f3cfdc89b2d16a",
+      "modified":1620043551291,
+      "created":1619989631475,
+      "url":"{{ _.url }}/update/58d525a7-f93d-41a6-b1f3-c7887e2dad3d",
+      "name":"Update a texture pack by UUID",
+      "description":"",
+      "method":"PUT",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"rating\": {\n\t\t\"average\": 4.8,\n\t\t\"total\": 10000\n\t}\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_7ae67cb7038b4eb2941614b2cabf7ed6"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498905,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_00ba64a937c441a68722203f8613a866",
+      "parentId":"fld_a1d011fafab44d5d96f3cfdc89b2d16a",
+      "modified":1620043299422,
+      "created":1620007528403,
+      "url":"{{ _.url }}/delete/58d525a7-f93d-41a6-b1f3-c7887e2dad3d",
+      "name":"Delete a texture pack by UUID",
+      "description":"",
+      "method":"DELETE",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498892.5,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_ac31e6e51a7641baa9e7e72c07c49714",
+      "parentId":"fld_a1d011fafab44d5d96f3cfdc89b2d16a",
+      "modified":1620044442713,
+      "created":1619961802237,
+      "url":"{{ _.url }}",
+      "name":"List all texture packs",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498880,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_2e8c27cd550943d88bba502b245c4b51",
+      "parentId":"fld_a1d011fafab44d5d96f3cfdc89b2d16a",
+      "modified":1620043304281,
+      "created":1619982745610,
+      "url":"{{ _.url }}/uuid/58d525a7-f93d-41a6-b1f3-c7887e2dad3d",
+      "name":"List a texture pack by UUID",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498830,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_b0996dd438d24edab1c9996772f3daf4",
+      "parentId":"fld_a1d011fafab44d5d96f3cfdc89b2d16a",
+      "modified":1620043310650,
+      "created":1619983008397,
+      "url":"{{ _.url }}/title/Minecraft Classic Texture Pack",
+      "name":"List a texture pack by Title",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498780,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_255bdb12ad3446159c7df615943750ae",
+      "parentId":"fld_a1d011fafab44d5d96f3cfdc89b2d16a",
+      "modified":1620044672277,
+      "created":1619983048254,
+      "url":"{{ _.url }}/creator/Minecraft",
+      "name":"List texture packs by Creator",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498730,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_9bb41c4cca80407d90514e9a8e45176e",
+      "parentId":"fld_3f48880153b84361b929fdb31f2ee6a4",
+      "modified":1620044148675,
+      "created":1620044097417,
+      "url":"{{ _.url }}",
+      "name":"Register a new mash-up pack",
+      "description":"",
+      "method":"POST",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"uuid\": \"5a56435d-689c-46aa-a685-073750bff4d4\",\n\t\"title\": \"Toy Story Mash-up\",\n\t\"description\": \"Open up the toy box! Woody, Buzz, Bo Peep and many of your favorite toys come to life in this oversized Mash-up based on all the Toy Story movies! To infinity and beyond!\",\n\t\"creator\": \"Minecraft\",\n\t\"price\": \"1340\",\n\t\"trailer\": \"https://www.youtube.com/watch?v=EyA_F0lX5DQ\",\n\t\"keyart\": \"https://xforgeassets001.xboxlive.com/pf-title-b63a0803d3653643-20ca2/a31a5fb2-e4a7-4446-801a-0f3e0069439f/ToyStory_Thumbnail_0.jpg\",\n\t\"rating\": {\n\t\t\"average\": 4.6,\n\t\t\"total\": 21614\n\t},\n\t\"url\": \"https://www.minecraft.net/en-us/pdp.html?id=5a56435d-689c-46aa-a685-073750bff4d4\"\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_96bc992092ef44d5b17dc1375b634b8c"
+        },
+        {
+          "name":"",
+          "value":"",
+          "description":"",
+          "id":"pair_f787d3d468604fca9a5cc5f0f76a04d2"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "token":"MY_BEARER_TOKEN",
+        "prefix":"Bearer",
+        "disabled":false
+      },
+      "metaSortKey":-1619961498930,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"fld_3f48880153b84361b929fdb31f2ee6a4",
+      "parentId":"fld_3101cfdff61a4da38dbe550077d46dad",
+      "modified":1620044105915,
+      "created":1620044097415,
+      "name":"Mash-Up Packs",
+      "description":"",
+      "environment":{
+        "url":"http://localhost:3000/api/v1/mash-up-packs"
+      },
+      "environmentPropertyOrder":{
+        "&":[
+          "url"
+        ]
+      },
+      "metaSortKey":-1619937912321,
+      "_type":"request_group"
+    },
+    {
+      "_id":"req_43433efc84bb4e82bcdf3ebb29864cb5",
+      "parentId":"fld_3f48880153b84361b929fdb31f2ee6a4",
+      "modified":1620044189327,
+      "created":1620044097423,
+      "url":"{{ _.url }}/update/5a56435d-689c-46aa-a685-073750bff4d4",
+      "name":"Update a mash-up pack by UUID",
+      "description":"",
+      "method":"PUT",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"rating\": {\n\t\t\"average\": 4.8,\n\t\t\"total\": 10000\n\t}\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_7ae67cb7038b4eb2941614b2cabf7ed6"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498905,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_ed030648aed749c3b478cc838bfc6433",
+      "parentId":"fld_3f48880153b84361b929fdb31f2ee6a4",
+      "modified":1620044194444,
+      "created":1620044097424,
+      "url":"{{ _.url }}/delete/5a56435d-689c-46aa-a685-073750bff4d4",
+      "name":"Delete a mash-up pack by UUID",
+      "description":"",
+      "method":"DELETE",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498892.5,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_ca1bea0d6cb24316b8b8b6abcc161caf",
+      "parentId":"fld_3f48880153b84361b929fdb31f2ee6a4",
+      "modified":1620044438389,
+      "created":1620044097418,
+      "url":"{{ _.url }}",
+      "name":"List all mash-up packs",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498880,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_a03861bbc01049bb8500f3c5a8116d96",
+      "parentId":"fld_3f48880153b84361b929fdb31f2ee6a4",
+      "modified":1620044198483,
+      "created":1620044097419,
+      "url":"{{ _.url }}/uuid/5a56435d-689c-46aa-a685-073750bff4d4",
+      "name":"List a mash-up pack by UUID",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498830,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_d6e2113cece54302b685a3ce3f538dac",
+      "parentId":"fld_3f48880153b84361b929fdb31f2ee6a4",
+      "modified":1620044206861,
+      "created":1620044097420,
+      "url":"{{ _.url }}/title/Toy Story Mash-up",
+      "name":"List a mash-up pack by Title",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498780,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_a791e1b4bb2e4cd98723be56eea4fe43",
+      "parentId":"fld_3f48880153b84361b929fdb31f2ee6a4",
+      "modified":1620044664208,
+      "created":1620044097422,
+      "url":"{{ _.url }}/creator/Minecraft",
+      "name":"List mash-up packs by Creator",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498730,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_386c13bba6ee4eb5bb173fcbf39e8080",
+      "parentId":"fld_85e77c28663044b4a679ab1ea323de76",
+      "modified":1620044475171,
+      "created":1620044383717,
+      "url":"{{ _.url }}",
+      "name":"Register a new adventure map",
+      "description":"",
+      "method":"POST",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"uuid\": \"8f6b2d03-b0c9-4cd5-94bb-bd95ee04f012\",\n\t\"title\": \"Frozen\",\n\t\"description\": \"Welcome to Arendelle, home of Anna, Elsa, Olaf and friends. Adventure past the Ice Palace and into the unknown in this Frozen themed world! Play mini-games and complete puzzles to earn rewards, then head back to decorate the castle, all while enjoying your favorite Frozen songs! - Created by Noxcrew 1GB+ RAM Recommended\",\n\t\"creator\": \"Minecraft\",\n\t\"price\": \"1340\",\n\t\"trailer\": \"https://www.youtube.com/watch?v=yY7R33PtatA\",\n\t\"keyart\": \"https://xforgeassets002.xboxlive.com/pf-title-b63a0803d3653643-ee7b/9343daf3-d9f3-42f2-aab1-8ad5838dc2e6/Frozen_Thumbnail_0.jpg\",\n\t\"rating\": {\n\t\t\"average\": 4.5,\n\t\t\"total\": 14624\n\t},\n\t\"url\": \"https://www.minecraft.net/en-us/pdp.html?id=8f6b2d03-b0c9-4cd5-94bb-bd95ee04f012\"\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_96bc992092ef44d5b17dc1375b634b8c"
+        },
+        {
+          "name":"",
+          "value":"",
+          "description":"",
+          "id":"pair_f787d3d468604fca9a5cc5f0f76a04d2"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "token":"MY_BEARER_TOKEN",
+        "prefix":"Bearer",
+        "disabled":false
+      },
+      "metaSortKey":-1619961498930,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"fld_85e77c28663044b4a679ab1ea323de76",
+      "parentId":"fld_3101cfdff61a4da38dbe550077d46dad",
+      "modified":1620044496292,
+      "created":1620044383716,
+      "name":"Adventure Maps",
+      "description":"",
+      "environment":{
+        "url":"http://localhost:3000/api/v1/adventure-maps"
+      },
+      "environmentPropertyOrder":{
+        "&":[
+          "url"
+        ]
+      },
+      "metaSortKey":-1619915430657.5,
+      "_type":"request_group"
+    },
+    {
+      "_id":"req_2cc95bbebd6f403fbd62c6bd4a37dbfc",
+      "parentId":"fld_85e77c28663044b4a679ab1ea323de76",
+      "modified":1620044517671,
+      "created":1620044383724,
+      "url":"{{ _.url }}/update/8f6b2d03-b0c9-4cd5-94bb-bd95ee04f012",
+      "name":"Update a adventure map by UUID",
+      "description":"",
+      "method":"PUT",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"rating\": {\n\t\t\"average\": 4.8,\n\t\t\"total\": 10000\n\t}\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_7ae67cb7038b4eb2941614b2cabf7ed6"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498905,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_968384ccb43d4c109083e6fd41471420",
+      "parentId":"fld_85e77c28663044b4a679ab1ea323de76",
+      "modified":1620044521404,
+      "created":1620044383725,
+      "url":"{{ _.url }}/delete/8f6b2d03-b0c9-4cd5-94bb-bd95ee04f012",
+      "name":"Delete a adventure map by UUID",
+      "description":"",
+      "method":"DELETE",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498892.5,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_d0477ba77c8a4f34b33a3def9878303e",
+      "parentId":"fld_85e77c28663044b4a679ab1ea323de76",
+      "modified":1620044653706,
+      "created":1620044383718,
+      "url":"{{ _.url }}",
+      "name":"List all adventure maps",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498880,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_37ca1bdca1bf41189745ec40481de075",
+      "parentId":"fld_85e77c28663044b4a679ab1ea323de76",
+      "modified":1620044526027,
+      "created":1620044383720,
+      "url":"{{ _.url }}/uuid/8f6b2d03-b0c9-4cd5-94bb-bd95ee04f012",
+      "name":"List a adventure map by UUID",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498830,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_0a375652277d479295e6f6b20665125d",
+      "parentId":"fld_85e77c28663044b4a679ab1ea323de76",
+      "modified":1620044529886,
+      "created":1620044383721,
+      "url":"{{ _.url }}/title/Frozen",
+      "name":"List a adventure map by Title",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498780,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_b9d3b6fb0c864122bf163870a009c695",
+      "parentId":"fld_85e77c28663044b4a679ab1ea323de76",
+      "modified":1620044649974,
+      "created":1620044383722,
+      "url":"{{ _.url }}/creator/Minecraft",
+      "name":"List adventure maps by Creator",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498730,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_35da0330fb464f179a0c364b9bc17611",
+      "parentId":"fld_f37a0197355e456a9af4ab70122056d6",
+      "modified":1620044702372,
+      "created":1620044584154,
+      "url":"{{ _.url }}",
+      "name":"Register a new mini game",
+      "description":"",
+      "method":"POST",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"uuid\": \"2384db70-d40a-48f9-ab92-925e440e4c2d\",\n\t\"title\": \"How to Build: Town\",\n\t\"description\": \"Utilize 20 different build sets to create your very own custom city or town! Learn to build various different structures with extensive instruction kits and 3D models. Start with a blank canvas to create your town.\\r\\n+20 buildings to create\\r\\n+Block-by-block building guides\\r\\n+Includes detailed mini build models\",\n\t\"creator\": \"Cyclone\",\n\t\"price\": \"830\",\n\t\"trailer\": \"https://www.youtube.com/watch?v=IwGpav_GeDk\",\n\t\"keyart\": \"https://xforgeassets001.xboxlive.com/pf-title-b63a0803d3653643-20ca2/e57b6401-3800-4197-ac47-17ba7c37fc6c/How_To_Build_thumbnail.jpg\",\n\t\"rating\": {\n\t\t\"average\": 4.1,\n\t\t\"total\": 890\n\t},\n\t\"url\": \"https://www.minecraft.net/en-us/pdp.html?id=2384db70-d40a-48f9-ab92-925e440e4c2d\"\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_96bc992092ef44d5b17dc1375b634b8c"
+        },
+        {
+          "name":"",
+          "value":"",
+          "description":"",
+          "id":"pair_f787d3d468604fca9a5cc5f0f76a04d2"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "token":"MY_BEARER_TOKEN",
+        "prefix":"Bearer",
+        "disabled":false
+      },
+      "metaSortKey":-1619961498930,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"fld_f37a0197355e456a9af4ab70122056d6",
+      "parentId":"fld_3101cfdff61a4da38dbe550077d46dad",
+      "modified":1620044719119,
+      "created":1620044584151,
+      "name":"Mini Games",
+      "description":"",
+      "environment":{
+        "url":"http://localhost:3000/api/v1/mini-games"
+      },
+      "environmentPropertyOrder":{
+        "&":[
+          "url"
+        ]
+      },
+      "metaSortKey":-1619904189825.75,
+      "_type":"request_group"
+    },
+    {
+      "_id":"req_db556edb72194475a5f5418507d1cef1",
+      "parentId":"fld_f37a0197355e456a9af4ab70122056d6",
+      "modified":1620044710939,
+      "created":1620044584161,
+      "url":"{{ _.url }}/update/2384db70-d40a-48f9-ab92-925e440e4c2d",
+      "name":"Update a mini game by UUID",
+      "description":"",
+      "method":"PUT",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"rating\": {\n\t\t\"average\": 4.8,\n\t\t\"total\": 10000\n\t}\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_7ae67cb7038b4eb2941614b2cabf7ed6"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498905,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_55de7f61cd8c46839a85d62cda866249",
+      "parentId":"fld_f37a0197355e456a9af4ab70122056d6",
+      "modified":1620044618355,
+      "created":1620044584161,
+      "url":"{{ _.url }}/delete/8f6b2d03-b0c9-4cd5-94bb-bd95ee04f012",
+      "name":"Delete a mini game by UUID",
+      "description":"",
+      "method":"DELETE",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498892.5,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_f9e5031c312746c0b77d9fbbf4457f41",
+      "parentId":"fld_f37a0197355e456a9af4ab70122056d6",
+      "modified":1620044610146,
+      "created":1620044584157,
+      "url":"{{ _.url }}",
+      "name":"List all mini games",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498880,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_50860906b8f44386962fc2e633ba4017",
+      "parentId":"fld_f37a0197355e456a9af4ab70122056d6",
+      "modified":1620044736985,
+      "created":1620044584158,
+      "url":"{{ _.url }}/uuid/2384db70-d40a-48f9-ab92-925e440e4c2d",
+      "name":"List a mini game by UUID",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498830,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_60f507e369c641bd96f4d49f4d2c3ae5",
+      "parentId":"fld_f37a0197355e456a9af4ab70122056d6",
+      "modified":1620044744227,
+      "created":1620044584159,
+      "url":"{{ _.url }}/title/How to Build: Town",
+      "name":"List a mini game by Title",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498780,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_0ca2ba4b63fa4d13ab17b4992f5bbe13",
+      "parentId":"fld_f37a0197355e456a9af4ab70122056d6",
+      "modified":1620044750876,
+      "created":1620044584160,
+      "url":"{{ _.url }}/creator/Cyclone",
+      "name":"List mini games by Creator",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498730,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_9c4fe008f4ee446aa33064cd5b977f46",
+      "parentId":"fld_0487a2bc0c094f91913e5a5025f1a487",
+      "modified":1620044818759,
+      "created":1620044772746,
+      "url":"{{ _.url }}",
+      "name":"Register a new survival map",
+      "description":"",
+      "method":"POST",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"uuid\": \"fb104838-8501-4325-866a-afb0ce5fc605\",\n\t\"title\": \"The Nightmare Before Christmas\",\n\t\"description\": \"A nightmare? Before Christmas?\\r\\nWith thousands of blocks over there\\r\\nAnd more redstone than I can bear?\\r\\nLooks scary, but also fun!\\r\\nCould it be I got my wish?\\r\\nShould I play, or should I run?\\r\\nA Christmas pack so nightmarish!\",\n\t\"creator\": \"Minecraft\",\n\t\"price\": \"990\",\n\t\"trailer\": null,\n\t\"keyart\": \"https://xforgeassets001.xboxlive.com/pf-title-b63a0803d3653643-20ca2/4229c46f-929c-43fa-a9dc-2be9e1bc43c0/NightmareBeforeChristmas_thumbnail_800x450.jpg\",\n\t\"rating\": {\n\t\t\"average\": 4.7,\n\t\t\"total\": 8493\n\t},\n\t\"url\": \"https://www.minecraft.net/en-us/pdp.html?id=fb104838-8501-4325-866a-afb0ce5fc605\"\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_96bc992092ef44d5b17dc1375b634b8c"
+        },
+        {
+          "name":"",
+          "value":"",
+          "description":"",
+          "id":"pair_f787d3d468604fca9a5cc5f0f76a04d2"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "token":"MY_BEARER_TOKEN",
+        "prefix":"Bearer",
+        "disabled":false
+      },
+      "metaSortKey":-1619961498930,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"fld_0487a2bc0c094f91913e5a5025f1a487",
+      "parentId":"fld_3101cfdff61a4da38dbe550077d46dad",
+      "modified":1620044880044,
+      "created":1620044772745,
+      "name":"Survival Spawns",
+      "description":"",
+      "environment":{
+        "url":"http://localhost:3000/api/v1/survival-spawns"
+      },
+      "environmentPropertyOrder":{
+        "&":[
+          "url"
+        ]
+      },
+      "metaSortKey":-1619898569409.875,
+      "_type":"request_group"
+    },
+    {
+      "_id":"req_160607ec518347efae5345d63125c538",
+      "parentId":"fld_0487a2bc0c094f91913e5a5025f1a487",
+      "modified":1620044849773,
+      "created":1620044772751,
+      "url":"{{ _.url }}/update/fb104838-8501-4325-866a-afb0ce5fc605",
+      "name":"Update a survival map by UUID",
+      "description":"",
+      "method":"PUT",
+      "body":{
+        "mimeType":"application/json",
+        "text":"{\n\t\"rating\": {\n\t\t\"average\": 4.8,\n\t\t\"total\": 10000\n\t}\n}"
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        {
+          "name":"Content-Type",
+          "value":"application/json",
+          "id":"pair_7ae67cb7038b4eb2941614b2cabf7ed6"
+        }
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498905,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_ef1a724e9634496d83fa3102fd67fc53",
+      "parentId":"fld_0487a2bc0c094f91913e5a5025f1a487",
+      "modified":1620044924571,
+      "created":1620044772750,
+      "url":"{{ _.url }}/delete/fb104838-8501-4325-866a-afb0ce5fc605",
+      "name":"Delete a survival map by UUID",
+      "description":"",
+      "method":"DELETE",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        "type":"bearer",
+        "prefix":"Bearer",
+        "token":"MY_BEARER_TOKEN"
+      },
+      "metaSortKey":-1619961498892.5,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_2e91c25547454907959c4a2e7f716cc4",
+      "parentId":"fld_0487a2bc0c094f91913e5a5025f1a487",
+      "modified":1620044822858,
+      "created":1620044772747,
+      "url":"{{ _.url }}",
+      "name":"List all survival maps",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498880,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_f5b3b36b1f4d4253953b42a75095e079",
+      "parentId":"fld_0487a2bc0c094f91913e5a5025f1a487",
+      "modified":1620044903789,
+      "created":1620044772748,
+      "url":"{{ _.url }}/uuid/fb104838-8501-4325-866a-afb0ce5fc605",
+      "name":"List a survival map by UUID",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498830,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_69065178ad0344ddb21b15420a1a9b56",
+      "parentId":"fld_0487a2bc0c094f91913e5a5025f1a487",
+      "modified":1620044911814,
+      "created":1620044772749,
+      "url":"{{ _.url }}/title/The Nightmare Before Christmas",
+      "name":"List a survival map by Title",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498780,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"req_72b28761da7e4cd185ca9aded687f553",
+      "parentId":"fld_0487a2bc0c094f91913e5a5025f1a487",
+      "modified":1620044918769,
+      "created":1620044772749,
+      "url":"{{ _.url }}/creator/Minecraft",
+      "name":"List survival maps by Creator",
+      "description":"",
+      "method":"GET",
+      "body":{
+        
+      },
+      "parameters":[
+        
+      ],
+      "headers":[
+        
+      ],
+      "authentication":{
+        
+      },
+      "metaSortKey":-1619961498730,
+      "isPrivate":false,
+      "settingStoreCookies":true,
+      "settingSendCookies":true,
+      "settingDisableRenderRequestBody":false,
+      "settingEncodeUrl":true,
+      "settingRebuildPath":true,
+      "settingFollowRedirects":"global",
+      "_type":"request"
+    },
+    {
+      "_id":"env_7291b0d83cfac0003a014339d6b1b31befdfd8ba",
+      "parentId":"wrk_2862b0fdb2b244d9b4ceb4005b809329",
+      "modified":1619892927019,
+      "created":1619892927019,
+      "name":"Base Environment",
+      "data":{
+        
+      },
+      "dataPropertyOrder":null,
+      "color":null,
+      "isPrivate":false,
+      "metaSortKey":1619892927019,
+      "_type":"environment"
+    },
+    {
+      "_id":"jar_7291b0d83cfac0003a014339d6b1b31befdfd8ba",
+      "parentId":"wrk_2862b0fdb2b244d9b4ceb4005b809329",
+      "modified":1619892927030,
+      "created":1619892927030,
+      "name":"Default Jar",
+      "cookies":[
+        
+      ],
+      "_type":"cookie_jar"
+    },
+    {
+      "_id":"spc_6f182f380d7444b0866719e8e5515381",
+      "parentId":"wrk_2862b0fdb2b244d9b4ceb4005b809329",
+      "modified":1619892926727,
+      "created":1619892926727,
+      "fileName":"Minecraft Markeplace API",
+      "contents":"",
+      "contentType":"yaml",
+      "_type":"api_spec"
+    }
+  ]
+}
