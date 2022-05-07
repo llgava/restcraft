@@ -1,5 +1,3 @@
-// All the options description can be found here: https://www.typescriptlang.org/docs/handbook/compiler-options.html
-
 {
   "compilerOptions": {
     "declaration": true,
@@ -10,25 +8,19 @@
     "target": "es2017",
     "module": "commonjs",
     "rootDir": "./src",
-    "outDir": "./build/src",
+    "outDir": "./build",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@utils/*": ["./src/utils/*"],
-      "@models/*": ["./src/models/*"],
-      "@routes/*": ["./src/routes/*"],
-      "@schemas/*": ["./src/schemas/*"],
-      "@services/*": ["./src/services/*"],
-      "@controllers/*": ["./src/controllers/*"]
+      //"@eg/*": ["./src/eg/*"]
     }
   },
 
-  "include": [ "./src" ],
+  "include": ["./src"],
   "exclude": [
-    "./__tests",
-    "./src/scripts",
-    "./src/utils/Generate.ts"
+    "./__test__",
+    "./src/@types"
   ]
 }
