@@ -1,7 +1,7 @@
 require('dotenv').config();
 import express from 'express';
-import BlocksRoutes from './routes/Blocks.routes';
-import { MongoManager } from './utils/MongoManager';
+import BlocksRoutes from '@routes/Blocks.routes';
+import { MongoManager } from '@utils/MongoManager';
 
 class Server {
   public url: string = '/api';

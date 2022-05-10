@@ -11,13 +11,18 @@ module.exports = {
     ['module-resolver', {
       root: ['./src'],
       alias: {
-        //'@eg': './src/eg'
+        '@typings': './src/typings',
+        '@controllers': './src/controllers',
+        '@models': './src/models',
+        '@routes': './src/routes',
+        '@schemas': './src/schemas',
+        '@utils': './src/utils',
       }
     }]
   ],
 
   ignore: [
     '**/__tests__/',
-    '**/@types/'
+    '**/typings/'
   ]
 };

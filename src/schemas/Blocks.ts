@@ -1,11 +1,11 @@
 import { model, Schema } from 'mongoose';
-import { Block } from '../@types/blocks';
+import { IBlock } from '@typings/IBlocks';
 
 const MetadataSchema = new Schema({
   name: { type: String, required: true },
-  texture_path: { type: String, required: true },
-  data: { type: String, required: true }
-});
+  texture_path: { type: String, required: false },
+  data: { type: Number, required: true }
+}, { _id: false });
 
 const schema = new Schema({
   id: { type: String, required: true },
@@ -15,4 +15,4 @@ const schema = new Schema({
   metadata: { type: [MetadataSchema], required: false },
 }, { versionKey: false });
 
-export const Blocks = model<Block>('blocks', schema);
+export const Blocks = model<IBlock>('blocks', schema);

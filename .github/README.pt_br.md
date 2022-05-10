@@ -1,13 +1,13 @@
 ## Restcraft · ![Code Coverage Badge](https://img.shields.io/badge/coverage-100%-success?style=flat-square&logo=jest&logoColor=white)
-### A unofficial Minecraft REST API
-English | [Português](./.github/README.pt_br.md)
+### Uma REST API não oficial de Minecraft
+[English](./../README.md) | Português
 
 ---
 
-**Restcraft** is a Minecraft REST API where you can query some game elements and informations such as blocks, items and effects.
+**Restcraft** é uma api de Minecraft onde você pode requisitar alguns elementos e informações do jogo como blocos, itens e efeitos.
 
-> This README are in development...
+> Este README está em desenvolvimento...
 
-## Contact
+## Contato
 
 Leonardo Luiz Gava - [@llgava](https://twitter.com/llgava "Leonardo Luiz Gava Twitter") - <llgavamt@gmail.com> | <me@llgava.net>

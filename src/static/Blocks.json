@@ -1,0 +1,455 @@
+{
+  "minecraft:acacia_door": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Acacia Door (Facing West)"
+      },
+      {
+        "data": 1,
+        "name": "Acacia Door (Facing North)"
+      },
+      {
+        "data": 2,
+        "name": "Acacia Door (Facing East)"
+      },
+      {
+        "data": 3,
+        "name": "Acacia Door (Facing South)"
+      }
+    ]
+  },
+  "minecraft:birch_door": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Birch Door (Facing West)"
+      },
+      {
+        "data": 1,
+        "name": "Birch Door (Facing North)"
+      },
+      {
+        "data": 2,
+        "name": "Birch Door (Facing East)"
+      },
+      {
+        "data": 3,
+        "name": "Birch Door (Facing South)"
+      }
+    ]
+  },
+  "minecraft:crimson_door": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Crimson Door (Facing West)"
+      },
+      {
+        "data": 1,
+        "name": "Crimson Door (Facing North)"
+      },
+      {
+        "data": 2,
+        "name": "Crimson Door (Facing East)"
+      },
+      {
+        "data": 3,
+        "name": "Crimson Door (Facing South)"
+      }
+    ]
+  },
+  "minecraft:dark_oak__door": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Dark Oak Door (Facing West)"
+      },
+      {
+        "data": 1,
+        "name": "Dark Oak Door (Facing North)"
+      },
+      {
+        "data": 2,
+        "name": "Dark Oak Door (Facing East)"
+      },
+      {
+        "data": 3,
+        "name": "Dark Oak Door (Facing South)"
+      }
+    ]
+  },
+  "minecraft:iron_door": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Iron Door (Facing West)"
+      },
+      {
+        "data": 1,
+        "name": "Iron Door (Facing North)"
+      },
+      {
+        "data": 2,
+        "name": "Iron Door (Facing East)"
+      },
+      {
+        "data": 3,
+        "name": "Iron Door (Facing South)"
+      }
+    ]
+  },
+  "minecraft:jungle_door": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Jungle Door (Facing West)"
+      },
+      {
+        "data": 1,
+        "name": "Jungle Door (Facing North)"
+      },
+      {
+        "data": 2,
+        "name": "Jungle Door (Facing East)"
+      },
+      {
+        "data": 3,
+        "name": "Jungle Door (Facing South)"
+      }
+    ]
+  },
+  "minecraft:spruce_door": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Spruce Door (Facing West)"
+      },
+      {
+        "data": 1,
+        "name": "Spruce Door (Facing North)"
+      },
+      {
+        "data": 2,
+        "name": "Spruce Door (Facing East)"
+      },
+      {
+        "data": 3,
+        "name": "Spruce Door (Facing South)"
+      }
+    ]
+  },
+  "minecraft:warped_door": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Warped Door (Facing West)"
+      },
+      {
+        "data": 1,
+        "name": "Warped Door (Facing North)"
+      },
+      {
+        "data": 2,
+        "name": "Warped Door (Facing East)"
+      },
+      {
+        "data": 3,
+        "name": "Warped Door (Facing South)"
+      }
+    ]
+  },
+  "minecraft:wooden_door": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Oak Door (Facing West)"
+      },
+      {
+        "data": 1,
+        "name": "Oak Door (Facing North)"
+      },
+      {
+        "data": 2,
+        "name": "Oak Door (Facing East)"
+      },
+      {
+        "data": 3,
+        "name": "Oak Door (Facing South)"
+      }
+    ]
+  },
+
+  "minecraft:wool": {
+    "metadata": [
+      {
+        "name": "White Wool",
+        "data": 0
+      },
+      {
+        "name": "Orange Wool",
+        "data": 1
+      },
+      {
+        "name": "Magenta Wool",
+        "data": 2
+      },
+      {
+        "name": "Light Blue Wool",
+        "data": 3
+      },
+      {
+        "name": "Yellow Wool",
+        "data": 4
+      },
+      {
+        "name": "Lime Wool",
+        "data": 5
+      },
+      {
+        "name": "Pink Wool",
+        "data": 6
+      },
+      {
+        "name": "Gray Wool",
+        "data": 7
+      },
+      {
+        "name": "Light Gray Wool",
+        "data": 8
+      },
+      {
+        "name": "Cyan Wool",
+        "data": 9
+      },
+      {
+        "name": "Purple Wool",
+        "data": 10
+      },
+      {
+        "name": "Blue Wool",
+        "data": 11
+      },
+      {
+        "name": "Brown Wool",
+        "data": 12
+      },
+      {
+        "name": "Green Wool",
+        "data": 13
+      },
+      {
+        "name": "Red Wool",
+        "data": 14
+      },
+      {
+        "name": "Black Wool",
+        "data": 15
+      }
+    ]
+  },
+  "minecraft:concretePowder": {
+    "metadata": [
+      {
+        "name": "White Concrete Power",
+        "data": 0
+      },
+      {
+        "name": "Orange Concrete Power",
+        "data": 1
+      },
+      {
+        "name": "Magenta Concrete Power",
+        "data": 2
+      },
+      {
+        "name": "Light Blue Concrete Power",
+        "data": 3
+      },
+      {
+        "name": "Yellow Concrete Power",
+        "data": 4
+      },
+      {
+        "name": "Lime Concrete Power",
+        "data": 5
+      },
+      {
+        "name": "Pink Concrete Power",
+        "data": 6
+      },
+      {
+        "name": "Gray Concrete Power",
+        "data": 7
+      },
+      {
+        "name": "Light Gray Concrete Power",
+        "data": 8
+      },
+      {
+        "name": "Cyan Concrete Power",
+        "data": 9
+      },
+      {
+        "name": "Purple Concrete Power",
+        "data": 10
+      },
+      {
+        "name": "Blue Concrete Power",
+        "data": 11
+      },
+      {
+        "name": "Brown Concrete Power",
+        "data": 12
+      },
+      {
+        "name": "Green Concrete Power",
+        "data": 13
+      },
+      {
+        "name": "Red Concrete Power",
+        "data": 14
+      },
+      {
+        "name": "Black Concrete Power",
+        "data": 15
+      }
+    ]
+  },
+  "minecraft:concrete": {
+    "metadata": [
+      {
+        "name": "White Concrete",
+        "data": 0
+      },
+      {
+        "name": "Orange Concrete",
+        "data": 1
+      },
+      {
+        "name": "Magenta Concrete",
+        "data": 2
+      },
+      {
+        "name": "Light Blue Concrete",
+        "data": 3
+      },
+      {
+        "name": "Yellow Concrete",
+        "data": 4
+      },
+      {
+        "name": "Lime Concrete",
+        "data": 5
+      },
+      {
+        "name": "Pink Concrete",
+        "data": 6
+      },
+      {
+        "name": "Gray Concrete",
+        "data": 7
+      },
+      {
+        "name": "Light Gray Concrete",
+        "data": 8
+      },
+      {
+        "name": "Cyan Concrete",
+        "data": 9
+      },
+      {
+        "name": "Purple Concrete",
+        "data": 10
+      },
+      {
+        "name": "Blue Concrete",
+        "data": 11
+      },
+      {
+        "name": "Brown Concrete",
+        "data": 12
+      },
+      {
+        "name": "Green Concrete",
+        "data": 13
+      },
+      {
+        "name": "Red Concrete",
+        "data": 14
+      },
+      {
+        "name": "Black Concrete",
+        "data": 15
+      }
+    ]
+  },
+  "minecraft:shulker_box": {
+    "metadata": [
+      {
+        "name": "White Shulker Box",
+        "data": 0
+      },
+      {
+        "name": "Orange Shulker Box",
+        "data": 1
+      },
+      {
+        "name": "Magenta Shulker Box",
+        "data": 2
+      },
+      {
+        "name": "Light Blue Shulker Box",
+        "data": 3
+      },
+      {
+        "name": "Yellow Shulker Box",
+        "data": 4
+      },
+      {
+        "name": "Lime Shulker Box",
+        "data": 5
+      },
+      {
+        "name": "Pink Shulker Box",
+        "data": 6
+      },
+      {
+        "name": "Gray Shulker Box",
+        "data": 7
+      },
+      {
+        "name": "Light Gray Shulker Box",
+        "data": 8
+      },
+      {
+        "name": "Cyan Shulker Box",
+        "data": 9
+      },
+      {
+        "name": "Purple Shulker Box",
+        "data": 10
+      },
+      {
+        "name": "Blue Shulker Box",
+        "data": 11
+      },
+      {
+        "name": "Brown Shulker Box",
+        "data": 12
+      },
+      {
+        "name": "Green Shulker Box",
+        "data": 13
+      },
+      {
+        "name": "Red Shulker Box",
+        "data": 14
+      },
+      {
+        "name": "Black Shulker Box",
+        "data": 15
+      }
+    ]
+  }
+}
