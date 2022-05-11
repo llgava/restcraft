@@ -11,4 +11,3 @@ MinecraftDataManager.blocks.forEach(block => {
     metadata: block.metadata
   });
 });
-

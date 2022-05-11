@@ -1,4 +1,4 @@
-import { IBlockTextureFaces } from '../typings/IBlocks';
+import { IBlockTextureFaces } from '@typings/IBlocks';
 import { MinecraftBlockMetadata } from './MinecraftBlockMetadata';
 import RPBlocks from '../../VanillaResourcePack/blocks.json';
 
@@ -20,7 +20,7 @@ export class MinecraftBlock {
     const _id = block_id.replace(MinecraftBlock.namespace, '');
     const block = Object.keys(RPBlocks).find((key) => key === _id);
 
-    if(!block || RPBlocks[block].texture === undefined) {
+    if(!block || !RPBlocks[block].textures) {
       return null;
     }
 

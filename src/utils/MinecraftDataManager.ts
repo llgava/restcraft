@@ -67,7 +67,7 @@ class MinecraftDataManager {
           return this.blocks.push(new MinecraftBlock(blockLatest.name, blockLatest.displayName, metadata));
         }
 
-        return this.blocks.push(new MinecraftBlock(blockLatest.name, blockLatest.displayName, []));
+        return this.blocks.push(new MinecraftBlock(blockLatest.name, blockLatest.displayName, metadata));
       }
 
       // * Transfer block metadata from legacy to latest version
