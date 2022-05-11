@@ -26,7 +26,7 @@ export class BlocksController {
     let document = await Blocks.findOne({ name: req.query.value }).select('-_id');
 
     if (!document) {
-      document = await Blocks.findOne({ metadata: { $elemMatch: { name: req.query.value } } });
+      document = await Blocks.findOne({ metadata: { $elemMatch: { name: req.query.value } } }).select('-_id');
     }
 
     return res.status(200).json(document);
