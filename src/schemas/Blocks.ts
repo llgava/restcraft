@@ -1,6 +1,6 @@
 import { model, Schema } from 'mongoose';
 import { IBlock } from '@typings/IBlocks';
-import { MetadataType } from './MetadataType';
+import { MetadataSchema } from './MetadataType';
 import { TextureDataType } from './TextureDataType';
 
 const schema = new Schema({
@@ -8,7 +8,7 @@ const schema = new Schema({
   has_variations: { type: Boolean, required: true },
   name: { type: String, required: false },
   texture_data: { type: TextureDataType, required: false },
-  metadata: { type: MetadataType, required: false },
+  metadata: { type: [MetadataSchema], required: false },
 }, { versionKey: false });
 
 export const Blocks = model<IBlock>('blocks', schema);

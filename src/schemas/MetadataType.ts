@@ -1,6 +1,9 @@
 import mongoose from 'mongoose';
 import { IBlockMetadata } from '@typings/IBlocks';
 
+/**
+ * @deprecated Use MetadataSchema instead
+ */
 export class MetadataType extends mongoose.SchemaType {
   constructor(key: string, options: any) {
     super(key, options, MetadataType.name);
@@ -28,3 +31,8 @@ export class MetadataType extends mongoose.SchemaType {
 }
 
 mongoose.Schema.Types[MetadataType.name] = MetadataType;
+
+export const MetadataSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  data: { type: Number, required: true },
+}, { _id: false, versionKey: false });
