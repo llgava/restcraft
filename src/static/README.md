@@ -10,8 +10,8 @@ The [PopulateDatabase](../../scripts/PopulateDatabase.ts) script would automatic
   "minecraft:BLOCK_ID": {
     "metadata": [
       {
-        "data": <number>,
-        "name": <string>
+        "data": 0,
+        "name": "A block variation"
       }
     ]
   }

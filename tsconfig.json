@@ -7,7 +7,7 @@
     "resolveJsonModule": true,
     "target": "es2017",
     "module": "commonjs",
-    "rootDir": "./src",
+    "rootDir": ".",
     "outDir": "./build",
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -23,7 +23,7 @@
     }
   },
 
-  "include": ["./src"],
+  "include": ["./src", "./VanillaResourcePack"],
   "exclude": [
     "./__test__",
     "./src/typings",

@@ -7,7 +7,7 @@ MinecraftDataManager.blocks.forEach(block => {
     id: block.id,
     name: block.name,
     has_variations: block.metadata.length > 0 ? true : false,
-    texture_path: "textures/blocks/$BLOCK_TEXTURE.png", // TODO: replace $BLOCK_TEXTURE with the block's texture path
+    texture_data: "This can be a string or ITextures object type.", // TODO: change in the future
     metadata: block.metadata
   });
 });

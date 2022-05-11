@@ -13,7 +13,7 @@
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "test": "jest --passWithNoTests",
     "test:coverage": "jest --coverage --passWithNoTests",
-    "populate": "node scripts/populate_db.js"
+    "populate": "ts-node-dev -r tsconfig-paths/register scripts/PopulateDatabase.ts"
   },
   "dependencies": {
     "chalk": "4.1.2",
