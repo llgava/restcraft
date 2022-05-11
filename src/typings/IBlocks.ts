@@ -1,19 +1,17 @@
 import { ObjectId } from 'mongoose';
 
-export interface IBlock extends IBlockBase {
+export interface IBlock {
   _id?: ObjectId | string;
   id?: string;
+  name?: string;
   has_variations?: boolean;
   metadata?: IBlockMetadata[];
+  texture_data?: string | IBlockTextureFaces;
 }
 
-export interface IBlockMetadata extends IBlockBase {
-  data?: number;
-}
-
-export interface IBlockBase {
+export interface IBlockMetadata {
   name?: string;
-  texture_path?: string;
+  data?: number;
 }
 
 /**
@@ -21,4 +19,14 @@ export interface IBlockBase {
  */
 export interface ITransferMetadata {
   [block: string]: string;
+}
+
+export interface IBlockTextureFaces {
+  up?: string;
+  down?: string;
+  side?: string;
+  east?: string;
+  west?: string;
+  north?: string;
+  south?: string;
 }
