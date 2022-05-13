@@ -1,13 +1,20 @@
 import { Request, Response } from 'express';
-import { Blocks } from '@schemas/Blocks';
+import { Blocks } from '@models/Blocks';
 
 export class BlocksController {
 
   public static async register(req: Request, res: Response): Promise<Response> {
-    const document = await Blocks.create(req.body);
+    try {
+      const document = await Blocks.create(req.body);
+      document.save();
 
-    document.save();
-    return res.status(201).json(document);
+      return res.status(201).json(document);
+    } catch (error) {
+      return res.status(200).json({
+        error: true,
+        message: 'Block already registered.'
+      });
+    }
   }
 
   public static async getAll(req: Request, res: Response): Promise<Response> {

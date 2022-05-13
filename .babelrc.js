@@ -12,10 +12,9 @@ module.exports = {
       root: ['./src'],
       alias: {
         '@typings': './src/typings',
-        '@controllers': './src/controllers',
+        '@controllers': './src/api/controllers',
         '@models': './src/models',
-        '@routes': './src/routes',
-        '@schemas': './src/schemas',
+        '@routes': './src/api/routes',
         '@utils': './src/utils',
       }
     }]
@@ -23,6 +22,7 @@ module.exports = {
 
   ignore: [
     '**/__tests__/',
-    '**/typings/'
+    '**/typings/',
+    "**/scripts/"
   ]
 };

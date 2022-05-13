@@ -14,19 +14,18 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@typings/*": ["./src/typings/*"],
-      "@controllers/*": ["./src/controllers/*"],
-      "@models/*": ["./src/models/*"],
-      "@routes/*": ["./src/routes/*"],
-      "@schemas/*": ["./src/schemas/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@typings/*": ["src/typings/*"],
+      "@controllers/*": ["src/api/controllers/*"],
+      "@models/*": ["src/models/*"],
+      "@routes/*": ["src/api/routes/*"],
+      "@utils/*": ["src/utils/*"]
     }
   },
 
-  "include": ["./src", "./VanillaResourcePack"],
+  "include": ["src/", "VanillaResourcePack/"],
   "exclude": [
-    "./__test__",
-    "./src/typings",
-    "./scripts"
+    "__test__/",
+    "src/typings/",
+    "scripts/"
   ]
 }

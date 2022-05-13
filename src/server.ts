@@ -1,18 +1,19 @@
 require('dotenv').config();
-import express, { Express } from 'express';
-import BlocksRoutes from '@routes/Blocks.routes';
+import express from 'express';
+import { BlocksRoutes } from '@routes/Blocks.routes';
 import { MongoManager } from '@utils/MongoManager';
 
 export class Server {
-  public app: Express = express();
+  public app: express.Express = express();
 
   constructor(url = '/api') {
     MongoManager.connect(process.env.MONGO_URI);
 
+    //this.app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
 
-    // Server routes
-    this.app.use(url, BlocksRoutes.router);
+    // API Routes
+    this.app.use(url, new BlocksRoutes().getRouter);
   }
 }
