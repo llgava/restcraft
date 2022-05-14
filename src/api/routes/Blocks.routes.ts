@@ -8,6 +8,7 @@ export class BlocksRoutes {
     this._router = Router();
 
     this._router.post('/blocks', BlocksController.register);
+    this._router.delete('/blocks', BlocksController.delete);
     this._router.get('/blocks', BlocksController.getAll);
     this._router.get('/blocks/id', BlocksController.getById);
     this._router.get('/blocks/name', BlocksController.getByName);

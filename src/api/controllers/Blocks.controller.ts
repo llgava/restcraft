@@ -8,13 +8,33 @@ export class BlocksController {
       const document = await Blocks.create(req.body);
       document.save();
 
-      return res.status(201).json(document);
-    } catch (error) {
+      return res.status(201).json({
+        error: false,
+        message: req.body.id + ' has been registered'
+      });
+    } catch (err) {
       return res.status(200).json({
         error: true,
-        message: 'Block already registered.'
+        message: 'Block already registered'
       });
     }
+  }
+
+  public static async delete(req: Request, res: Response): Promise<Response> {
+    const document = await Blocks.findOne({ id: req.query.value });
+
+    if(!document) {
+      return res.status(200).json({
+        error: true,
+        message: req.query.value + ' cannot be deleted'
+      });
+    }
+
+    document.delete();
+    return res.status(200).json({
+      error: false,
+      message: req.query.value + ' has been deleted'
+    });
   }
 
   public static async getAll(req: Request, res: Response): Promise<Response> {
@@ -44,6 +64,7 @@ export class BlocksController {
 
     if (document.metadata.length === 0) {
       return res.status(200).json({
+        error: true,
         message: 'No metadata found'
       });
     }

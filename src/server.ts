@@ -17,3 +17,5 @@ export class Server {
     this.app.use(url, new BlocksRoutes().getRouter);
   }
 }
+
+export default new Server();
