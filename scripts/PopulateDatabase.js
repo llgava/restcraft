@@ -1,8 +1,8 @@
 const axios = require('axios');
 const chalk = require('chalk');
-const { tsImport } = require('./utils/ImportTypeScriptFile');
+const { requireTS } = require('./utils/ImportTypeScriptFile');
 
-const MinecraftDataManager = tsImport('../src/utils/MinecraftDataManager')
+const MinecraftDataManager = requireTS('../src/utils/MinecraftDataManager')
 
 console.log(chalk.bold.green('Populating database...\n'));
 

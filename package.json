@@ -9,7 +9,7 @@
   "scripts": {
     "bump": "yarn upgrade --latest",
     "start": "node .",
-    "build": "babel ./src --extensions \".js,.ts\" --out-dir ./build --copy-files --no-copy-ignored ",
+    "build": "babel ./src --extensions \".ts\" --out-dir ./build --copy-files --no-copy-ignored",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "test": "jest --passWithNoTests",
     "test:coverage": "jest --coverage --passWithNoTests",
