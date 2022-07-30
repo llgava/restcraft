@@ -1,4 +1,80 @@
 {
+  "minecraft:prismarine": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Prismarine"
+      },
+      {
+        "data": 1,
+        "name": "Dark Prismarine"
+      },
+      {
+        "data": 2,
+        "name": "Prismarine Bricks"
+      }
+    ]
+  },
+  "minecraft:log": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Oak Log"
+      },
+      {
+        "data": 1,
+        "name": "Spruce Log"
+      },
+      {
+        "data": 2,
+        "name": "Birch Log"
+      },
+      {
+        "data": 3,
+        "name": "Jungle Log"
+      }
+    ]
+  },
+  "minecraft:log2": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Acacia Log"
+      },
+      {
+        "data": 1,
+        "name": "Dark Oak Log"
+      }
+    ]
+  },
+  "minecraft:planks": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Oak Planks"
+      },
+      {
+        "data": 1,
+        "name": "Spruce Planks"
+      },
+      {
+        "data": 2,
+        "name": "Birch Planks"
+      },
+      {
+        "data": 3,
+        "name": "Jungle Planks"
+      },
+      {
+        "data": 4,
+        "name": "Acacia Planks"
+      },
+      {
+        "data": 5,
+        "name": "Dark Oak Planks"
+      }
+    ]
+  },
   "minecraft:acacia_door": {
     "metadata": [
       {
@@ -248,7 +324,7 @@
       }
     ]
   },
-  "minecraft:concretePowder": {
+  "minecraft:concrete_powder": {
     "metadata": [
       {
         "name": "White Concrete Power",

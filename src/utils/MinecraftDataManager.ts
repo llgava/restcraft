@@ -22,13 +22,19 @@ import { MinecraftBlockMetadata } from '@models/MinecraftBlockMetadata';
 
 const minecraft = {
   legacy: MinecraftData("bedrock_0.14"),
-  latest: MinecraftData("bedrock_1.18.11")
+  latest: MinecraftData("bedrock_1.19")
 };
 
 class MinecraftDataManager {
-  private static transferMetadata: ITransferMetadata[] = [{ "stained_glass": "glass" }, { "stained_hardened_clay": "hardened_clay" }];
+  private static transferMetadata: ITransferMetadata[] = [
+    { "stained_glass": "glass" },
+    { "stained_hardened_clay": "hardened_clay" }
+  ];
+
   private ignoreMetadata: string[] = ["podzol"];
-  public blocks: MinecraftBlock[] = [];
+  public blocks: MinecraftBlock[] = [
+    
+  ];
 
   constructor() {
     this.updateIgnoreMetadata();
