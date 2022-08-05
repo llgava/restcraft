@@ -1,4 +1,98 @@
 {
+  "minecraft:quartz_block": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Block of Quartz"
+      },
+      {
+        "data": 1,
+        "name": "Chiseled Quartz Block"
+      },
+      {
+        "data": 2,
+        "name": "Pillar Quartz Block"
+      },
+      {
+        "data": 3,
+        "name": "Smooth Quartz Block"
+      }
+    ]
+  },
+  "minecraft:red_sandstone": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Red Sandstone"
+      },
+      {
+        "data": 1,
+        "name": "Chiseled Red Sandstone"
+      },
+      {
+        "data": 2,
+        "name": "Cut Red Sandstone"
+      },
+      {
+        "data": 3,
+        "name": "Smooth Red Sandstone"
+      }
+    ]
+  },
+  "minecraft:sandstone": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Sandstone"
+      },
+      {
+        "data": 1,
+        "name": "Chiseled Sandstone"
+      },
+      {
+        "data": 2,
+        "name": "Cut Sandstone"
+      },
+      {
+        "data": 3,
+        "name": "Smooth Sandstone"
+      }
+    ]
+  },
+  "minecraft:stonebrick": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Stone Bricks"
+      },
+      {
+        "data": 1,
+        "name": "Mossy Stone Bricks"
+      },
+      {
+        "data": 2,
+        "name": "Cracked Stone Bricks"
+      },
+      {
+        "data": 3,
+        "name": "Chiseled Stone Bricks"
+      }
+    ]
+  },
+
+  "minecraft:purpur_block": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Purpur Block"
+      },
+      {
+        "data": 2,
+        "name": "Purpur Pillar"
+      }
+    ]
+  },
+
   "minecraft:prismarine": {
     "metadata": [
       {
