@@ -433,67 +433,67 @@
   "minecraft:concrete_powder": {
     "metadata": [
       {
-        "name": "White Concrete Power",
+        "name": "White Concrete Powder",
         "data": 0
       },
       {
-        "name": "Orange Concrete Power",
+        "name": "Orange Concrete Powder",
         "data": 1
       },
       {
-        "name": "Magenta Concrete Power",
+        "name": "Magenta Concrete Powder",
         "data": 2
       },
       {
-        "name": "Light Blue Concrete Power",
+        "name": "Light Blue Concrete Powder",
         "data": 3
       },
       {
-        "name": "Yellow Concrete Power",
+        "name": "Yellow Concrete Powder",
         "data": 4
       },
       {
-        "name": "Lime Concrete Power",
+        "name": "Lime Concrete Powder",
         "data": 5
       },
       {
-        "name": "Pink Concrete Power",
+        "name": "Pink Concrete Powder",
         "data": 6
       },
       {
-        "name": "Gray Concrete Power",
+        "name": "Gray Concrete Powder",
         "data": 7
       },
       {
-        "name": "Light Gray Concrete Power",
+        "name": "Light Gray Concrete Powder",
         "data": 8
       },
       {
-        "name": "Cyan Concrete Power",
+        "name": "Cyan Concrete Powder",
         "data": 9
       },
       {
-        "name": "Purple Concrete Power",
+        "name": "Purple Concrete Powder",
         "data": 10
       },
       {
-        "name": "Blue Concrete Power",
+        "name": "Blue Concrete Powder",
         "data": 11
       },
       {
-        "name": "Brown Concrete Power",
+        "name": "Brown Concrete Powder",
         "data": 12
       },
       {
-        "name": "Green Concrete Power",
+        "name": "Green Concrete Powder",
         "data": 13
       },
       {
-        "name": "Red Concrete Power",
+        "name": "Red Concrete Powder",
         "data": 14
       },
       {
-        "name": "Black Concrete Power",
+        "name": "Black Concrete Powder",
         "data": 15
       }
     ]
