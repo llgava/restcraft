@@ -1,4 +1,16 @@
 {
+  "minecraft:leaves2": {
+    "metadata": [
+      {
+        "name": "Acacia Leaves",
+        "data": 0
+      },
+      {
+        "name": "Dark Oak Leaves",
+        "data": 1
+      }
+    ]
+  },
   "minecraft:quartz_block": {
     "metadata": [
       {
