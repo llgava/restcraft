@@ -1,5 +1,36 @@
 {
+  "minecraft:lit_redstone_ore": {
+    "name": "Redstone Ore (Lit)",
+    "metadata": []
+  },
+
+  "minecraft:lit_deepslate_redstone_ore": {
+    "name": "Deepslate Redstone Ore (Lit)",
+    "metadata": []
+  },
+
+  "minecraft:lit_redstone_lamp": {
+    "name": "Redstone Lamp (Lit)",
+    "metadata": []
+  },
+
+  "minecraft:lit_smoker": {
+    "name": "Smoker (Lit)",
+    "metadata": []
+  },
+
+  "minecraft:lit_blast_furnace": {
+    "name": "Blast Furnace (Lit)",
+    "metadata": []
+  },
+
+  "minecraft:lit_furnace": {
+    "name": "Furnace (Lit)",
+    "metadata": []
+  },
+
   "minecraft:coral_block": {
+    "name": "Tube Coral Block",
     "metadata": [
       {
         "name": "Tube Coral Block",

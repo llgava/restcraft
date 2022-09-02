@@ -1,8 +1,6 @@
 /*
   TODO: Add metadata manually for following blocks (static/blocks.json)
     - Trapdoor types;
-    - Log types;
-    - Log2 types;
     - Sapling types;
     - Water types;
     - Flowing water types;
@@ -33,7 +31,7 @@ class MinecraftDataManager {
 
   private ignoreMetadata: string[] = ["podzol"];
   public blocks: MinecraftBlock[] = [
-    
+
   ];
 
   constructor() {
@@ -58,7 +56,9 @@ class MinecraftDataManager {
       // * Use static block metadata if available
       if (Object.keys(StaticBlocks).find((key) => key === 'minecraft:' + blockLatest.name)) {
         const staticMetadata = StaticBlocks['minecraft:' + blockLatest.name].metadata;
-        return this.blocks.push(new MinecraftBlock(blockLatest.name, blockLatest.displayName, staticMetadata));
+        const staticDisplayName = StaticBlocks['minecraft:' + blockLatest.name].name;
+
+        return this.blocks.push(new MinecraftBlock(blockLatest.name, staticDisplayName || blockLatest.displayName, staticMetadata));
       }
 
       // * Fix block metadata from legacy to latest

@@ -8,10 +8,11 @@ The [PopulateDatabase](../../scripts/PopulateDatabase.ts) script would automatic
 ```jsonc
 {
   "minecraft:BLOCK_ID": {
+    "name": "Default Block Name", // If needed
     "metadata": [
       {
         "data": 0,
-        "name": "A block variation"
+        "name": "A Block Variation"
       }
     ]
   }
