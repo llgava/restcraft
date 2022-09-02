@@ -246,22 +246,6 @@
       {
         "data": 11,
         "name": "Jungle Log (Facing North/South)"
-      },
-      {
-        "data": 12,
-        "name": "Oak Wood"
-      },
-      {
-        "data": 13,
-        "name": "Spruce Wood"
-      },
-      {
-        "data": 14,
-        "name": "Birch Wood"
-      },
-      {
-        "data": 15,
-        "name": "Jungle Wood"
       }
     ]
   },
@@ -290,14 +274,6 @@
       {
         "data": 9,
         "name": "Dark Oak Log (Facing North/South)"
-      },
-      {
-        "data": 12,
-        "name": "Acacia Wood"
-      },
-      {
-        "data": 13,
-        "name": "Dark Oak Wood"
       }
     ]
   },
