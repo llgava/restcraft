@@ -177,6 +177,14 @@
       {
         "data": 3,
         "name": "Smooth Quartz Block"
+      },
+      {
+        "data": 6,
+        "name": "Pillar Quartz Block (Facing West/East)"
+      },
+      {
+        "data": 10,
+        "name": "Pillar Quartz Block (Facing North/South)"
       }
     ]
   },
