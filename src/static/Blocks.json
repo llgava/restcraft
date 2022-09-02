@@ -1,4 +1,49 @@
 {
+  "minecraft:coral_block": {
+    "metadata": [
+      {
+        "name": "Tube Coral Block",
+        "data": 0
+      },
+      {
+        "name": "Brain Coral Block",
+        "data": 1
+      },
+      {
+        "name": "Bubble Coral Block",
+        "data": 2
+      },
+      {
+        "name": "Fire Coral Block",
+        "data": 3
+      },
+      {
+        "name": "Horn Coral Block",
+        "data": 4
+      },
+      {
+        "name": "Dead Tube Coral Block",
+        "data": 8
+      },
+      {
+        "name": "Dead Brain Coral Block",
+        "data": 9
+      },
+      {
+        "name": "Dead Bubble Coral Block",
+        "data": 10
+      },
+      {
+        "name": "Dead Fire Coral Block",
+        "data": 11
+      },
+      {
+        "name": "Dead Horn Coral Block",
+        "data": 12
+      }
+    ]
+  },
+
   "minecraft:anvil": {
     "metadata": [
       {
@@ -258,6 +303,14 @@
       {
         "data": 2,
         "name": "Purpur Pillar"
+      },
+      {
+        "data": 6,
+        "name": "Purpur Pillar (Facing West/East)"
+      },
+      {
+        "data": 10,
+        "name": "Purpur Pillar (Facing North/South)"
       }
     ]
   },
