@@ -1,4 +1,56 @@
 {
+  "minecraft:wood": {
+    "metadata": [
+      {
+        "data": 0,
+        "name": "Oak Wood"
+      },
+      {
+        "data": 1,
+        "name": "Spruce Wood"
+      },
+      {
+        "data": 2,
+        "name": "Birch Wood"
+      },
+      {
+        "data": 3,
+        "name": "Jungle Wood"
+      },
+      {
+        "data": 4,
+        "name": "Acacia Wood"
+      },
+      {
+        "data": 5,
+        "name": "Dark Oak Wood"
+      },
+      {
+        "data": 8,
+        "name": "Stripped Oak Wood"
+      },
+      {
+        "data": 9,
+        "name": "Stripped Spruce Wood"
+      },
+      {
+        "data": 10,
+        "name": "Stripped Birch Wood"
+      },
+      {
+        "data": 11,
+        "name": "Stripped Jungle Wood"
+      },
+      {
+        "data": 12,
+        "name": "Stripped Acacia Wood"
+      },
+      {
+        "data": 13,
+        "name": "Stripped Dark Oak Wood"
+      }
+    ]
+  },
   "minecraft:leaves2": {
     "metadata": [
       {
@@ -8,6 +60,30 @@
       {
         "name": "Dark Oak Leaves",
         "data": 1
+      },
+      {
+        "name": "Acacia Leaves (no decay)",
+        "data": 4
+      },
+      {
+        "name": "Dark Oak Leaves (no decay)",
+        "data": 5
+      },
+      {
+        "name": "Acacia Leaves (check decay)",
+        "data": 8
+      },
+      {
+        "name": "Dark Oak Leaves (check decay)",
+        "data": 9
+      },
+      {
+        "name": "Acacia Leaves (no decay and check decay)",
+        "data": 12
+      },
+      {
+        "name": "Dark Oak Leaves (no decay and check decay)",
+        "data": 13
       }
     ]
   },
@@ -138,6 +214,54 @@
       {
         "data": 3,
         "name": "Jungle Log"
+      },
+      {
+        "data": 4,
+        "name": "Oak Log (Facing West/East)"
+      },
+      {
+        "data": 5,
+        "name": "Spruce Log (Facing West/East)"
+      },
+      {
+        "data": 6,
+        "name": "Birch Log (Facing West/East)"
+      },
+      {
+        "data": 7,
+        "name": "Jungle Log (Facing West/East)"
+      },
+      {
+        "data": 8,
+        "name": "Oak Log (Facing North/South)"
+      },
+      {
+        "data": 9,
+        "name": "Spruce Log (Facing North/South)"
+      },
+      {
+        "data": 10,
+        "name": "Birch Log (Facing North/South)"
+      },
+      {
+        "data": 11,
+        "name": "Jungle Log (Facing North/South)"
+      },
+      {
+        "data": 12,
+        "name": "Oak Wood"
+      },
+      {
+        "data": 13,
+        "name": "Spruce Wood"
+      },
+      {
+        "data": 14,
+        "name": "Birch Wood"
+      },
+      {
+        "data": 15,
+        "name": "Jungle Wood"
       }
     ]
   },
@@ -150,6 +274,30 @@
       {
         "data": 1,
         "name": "Dark Oak Log"
+      },
+      {
+        "data": 4,
+        "name": "Acacia Log (Facing West/East)"
+      },
+      {
+        "data": 5,
+        "name": "Dark Oak Log (Facing West/East)"
+      },
+      {
+        "data": 8,
+        "name": "Acacia Log (Facing North/South)"
+      },
+      {
+        "data": 9,
+        "name": "Dark Oak Log (Facing North/South)"
+      },
+      {
+        "data": 12,
+        "name": "Acacia Wood"
+      },
+      {
+        "data": 13,
+        "name": "Dark Oak Wood"
       }
     ]
   },
