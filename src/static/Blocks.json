@@ -1,4 +1,57 @@
 {
+  "minecraft:anvil": {
+    "metadata": [
+      {
+        "name": "Anvil",
+        "data": 0
+      },
+      {
+        "name": "Anvil (Facing South)",
+        "data": 1
+      },
+      {
+        "name": "Anvil (Facing East)",
+        "data": 2
+      },
+      {
+        "name": "Anvil (Facing North)",
+        "data": 3
+      },
+      {
+        "name": "Slightly Damaged Anvil",
+        "data": 4
+      },
+      {
+        "name": "Slightly Damaged Anvil (Facing South)",
+        "data": 5
+      },
+      {
+        "name": "Slightly Damaged Anvil (Facing East)",
+        "data": 6
+      },
+      {
+        "name": "Slightly Damaged Anvil (Facing North)",
+        "data": 7
+      },
+      {
+        "name": "Very Damaged Anvil",
+        "data": 8
+      },
+      {
+        "name": "Very Damaged Anvil (Facing South)",
+        "data": 9
+      },
+      {
+        "name": "Very Damaged Anvil (Facing East)",
+        "data": 10
+      },
+      {
+        "name": "Very Damaged Anvil (Facing North)",
+        "data": 11
+      }
+    ]
+  },
+
   "minecraft:wood": {
     "metadata": [
       {
@@ -48,6 +101,26 @@
       {
         "data": 13,
         "name": "Stripped Dark Oak Wood"
+      }
+    ]
+  },
+  "minecraft:mangrove_leaves": {
+    "metadata": [
+      {
+        "name": "Mangrove Leaves",
+        "data": 0
+      },
+      {
+        "name": "Mangrove Leaves (no decay)",
+        "data": 1
+      },
+      {
+        "name": "Mangrove Leaves (check decay)",
+        "data": 2
+      },
+      {
+        "name": "Mangrove Leaves (no decay and check decay)",
+        "data": 3
       }
     ]
   },
@@ -485,7 +558,6 @@
       }
     ]
   },
-
   "minecraft:wool": {
     "metadata": [
       {
