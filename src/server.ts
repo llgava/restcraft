@@ -3,7 +3,6 @@ import express from 'express';
 import { BlocksRoutes } from '@routes/Blocks.routes';
 import { MongoManager } from '@utils/MongoManager';
 import path from 'path';
-
 export class Server {
   public app: express.Express = express();
 

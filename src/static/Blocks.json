@@ -1,4 +1,57 @@
 {
+  "minecraft:cocoa": {
+    "metadata": [
+      {
+        "name": "Cocoa Stage 0",
+        "data": 0
+      },
+      {
+        "name": "Cocoa Stage 0 (Facing East)",
+        "data": 1
+      },
+      {
+        "name": "Cocoa Stage 0 (Facing South)",
+        "data": 2
+      },
+      {
+        "name": "Cocoa Stage 0 (Facing West)",
+        "data": 3
+      },
+      {
+        "name": "Cocoa Stage 1",
+        "data": 4
+      },
+      {
+        "name": "Cocoa Stage 1 (Facing East)",
+        "data": 5
+      },
+      {
+        "name": "Cocoa Stage 1 (Facing South)",
+        "data": 6
+      },
+      {
+        "name": "Cocoa Stage 1 (Facing West)",
+        "data": 7
+      },
+      {
+        "name": "Cocoa Stage 2",
+        "data": 8
+      },
+      {
+        "name": "Cocoa Stage 2 (Facing East)",
+        "data": 9
+      },
+      {
+        "name": "Cocoa Stage 2 (Facing South)",
+        "data": 10
+      },
+      {
+        "name": "Cocoa Stage 2 (Facing West)",
+        "data": 11
+      }
+    ]
+  },
+
   "minecraft:lit_redstone_ore": {
     "name": "Redstone Ore (Lit)",
     "metadata": []
